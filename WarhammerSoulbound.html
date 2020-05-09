@@ -1,0 +1,295 @@
+
+<div class="master-container">
+
+<!-- Shows which sheet type is selected -->
+
+	<div style="position:absolute;right: 5px;top:30px"><p class="version"> </p></div>
+
+<!--  LOGO and dice images -->
+
+	<div style="display:inline-block;position:absolute;left: 0px;padding-bottom:0px"> 
+		<img src="sb_blank0.jpg" style="max-height: 100%;"/>
+	</div>
+
+<!--  ---------------------------------------------- MAIN SHEET --------------------------------------------------------------------  -->
+
+<div class="main-container container" style="padding-top:75px">
+		
+	<!-- ---------------------------- Player Core info ------------------ -->
+		
+		<div class="section pc">
+			<div class="flex-box">
+                <div class="flex-col"></div>
+					<label class="toppad">Character Name <input class="right shorttext" type="text" name="attr_charactername" style="width:55%"/></label>
+					<label class="toppad">Archetype <input class="right shorttext" type="text" name="attr_type" style="width:75%"/></label>
+					<label class="toppad;">Species <input class="right shorttext" style="width:70%;" type="text" name="attr_species"/></label>
+					<table style="margin-top:-10px; margin-left:-10px;">
+						<tr>
+							<td>
+							    <label class="toppad">AGE <input  class="smalltext shorttext" type="text" name="attr_age"/></label>
+                            </td
+                            ><td>
+							    <label>EYES <input class="smalltext shorttext" type="text" name="attr_eyes"/></label>
+                            </td
+                            ><td>
+							    <label>HAIR <input class="smalltext shorttext" type="text" name="attr_hair"/></label>
+                            </td
+                            ><td>
+							    <label>HEIGHT <input class="smalltext shorttext" type="text" name="attr_height"/></label>
+                            </td>
+                            <td>
+                                <label>WEIGHT <input class="smalltext shorttext" type="text" name="attr_weight"/></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>DISTINGUISHING FEATURES <input class="mediumtext shorttext" type="text" name="attr_distinguishing_features"/></label>
+                            </td>
+                            <td>
+                                <label>XP <input class="smalltext shorttext" type="text" name="attr_xp"/></label>
+                            </td>                            
+                        </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	<!-- ---------------------------------------------- Attributes&Skills ----------------------------------- -->
+
+		<div class="section pc npc"> 
+			<div class="flex-box">
+				<div class="flex-col">
+
+						<!---Body Attribute --->
+
+							<div class="tdborder"> 
+										<div class="bold">
+                                            <input type="number" name="attr_body" class="smallnumber"/>
+											<button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=Body}} {{Roll=[[(@{body})d6 ]]}}" >Body</button>
+											<button class="d6-dice rollmod gmroll gmroll-hide" type="roll" value="/w gm &{template:blue} {{name=Body}} {{Roll=[[(@{body})d6 ]]}}" ><span class="redtxt">GM</span></button>
+										</div>
+
+							</div>
+					
+					<!---Mind Attribute --->
+
+                    <div class="tdborder"> 
+                        <div class="bold">
+                            <input type="number" name="attr_mind" class="smallnumber"/>
+                            <button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=Mind}} {{Roll=[[(@{mind})d6  ]]}}" >Mind</button>
+                            <button class="d6-dice rollmod gmroll gmroll-hide" type="roll" value="/w gm &{template:blue} {{name=Mind}} {{Roll=[[(@{mind})d6 ]]}}" ><span class="redtxt">GM</span></button>
+                        </div>
+
+                    </div>
+
+				    <!---Soul Attribute --->
+
+                    <div class="tdborder"> 
+                        <div class="bold">
+                            <input type="number" name="attr_soul" class="smallnumber"/>
+                            <button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=Soul}} {{Roll=[[(@{soul})d6 ]]}}" >Soul</button>
+                            <button class="d6-dice rollmod gmroll gmroll-hide" type="roll" value="/w gm &{template:blue} {{name=Soul}} {{Roll=[[(@{soul})d6 ]]}}" ><span class="redtxt">GM</span></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex-col">
+                    <div class='col'>
+                        <label class="areaLabel">SKILLS</label>
+                        <table style="margin-top:-10px; margin-left:-10px;">
+                            <tr>
+                                <th></th>
+                                <th>Training</th>
+                                <th>Focus</th>
+                                <th></th>
+                                <th>Training</th>
+                                <th>Focus</th>
+                                <th></th>
+                                <th>Training</th>
+                                <th>Focus</th>                            
+                            </tr>
+                            <!-- todo add all skills -->
+                            <tr>
+                                <td><label>skill0</label></td>
+                                <td><input type="number" name="attr_skill0_training" class="pipnumber" min="0" max="3" value="0"/></td>    
+                                <td><input type="number" name="attr_skill0_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                <td><label>skill1</label></td>
+                                <td><input type="number" name="attr_skill1_training" class="pipnumber" min="0" max="3" value="0"/></td>    
+                                <td><input type="number" name="attr_skill1_focus" class="pipnumber" min="0" max="3" value="0"/></td>    
+                                <td><label>skill2</label></td>
+                                <td><input type="number" name="attr_skill2_training" class="pipnumber" min="0" max="3" value="0"/></td>    
+                                <td><input type="number" name="attr_skill2_focus" class="pipnumber" min="0" max="3" value="0"/></td>                                                                                                                         
+                            </tr>
+                        </table>
+                        <textarea name="attr_skills" style="width:95%;height:13em" ></textarea>
+                    </div>                    
+                </div>
+
+
+
+	<!-- -------------------------------------------------- Weapons & Armor --------------------------- -->
+
+		<div class="section pc npc shop-inventory"> 
+			<label style="text-align: center">Weapon & Armor</label>
+			<table>
+				<tr>
+					<td style="width:80px"><label>Weapon</label></td>
+					<td style="width:45px">Pool</td>
+					<td style="width:45px">Focus</td>
+					<td style="width:45px">Damage</td>
+					<td style="width:80px">Traits</td>
+                </tr>
+                <!-- todo make a dynamic table with roll20 sheet -->
+                <tr>
+                    <td><input type="text" name="attr_weapon_name"/></td>
+                    <td><input type="number" name="attr_weapon_pool"/></td>
+                    <td><input type="number" name="attr_weapon_focus"/></td>
+                    <td><input type="number" name="attr_weapon_damage"/></td>
+                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_weapon_name"/></td>
+                    <td><input type="number" name="attr_weapon_pool"/></td>
+                    <td><input type="number" name="attr_weapon_focus"/></td>
+                    <td><input type="number" name="attr_weapon_damage"/></td>
+                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_weapon_name"/></td>
+                    <td><input type="number" name="attr_weapon_pool"/></td>
+                    <td><input type="number" name="attr_weapon_focus"/></td>
+                    <td><input type="number" name="attr_weapon_damage"/></td>
+                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_weapon_name"/></td>
+                    <td><input type="number" name="attr_weapon_pool"/></td>
+                    <td><input type="number" name="attr_weapon_focus"/></td>
+                    <td><input type="number" name="attr_weapon_damage"/></td>
+                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_weapon_name"/></td>
+                    <td><input type="number" name="attr_weapon_pool"/></td>
+                    <td><input type="number" name="attr_weapon_focus"/></td>
+                    <td><input type="number" name="attr_weapon_damage"/></td>
+                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
+                </tr>                                                                
+			</table>
+		</div>
+		
+
+	<!-- ---------------------------------------------------------- Equipment PC ------------------------------------------- -->
+
+		<div class="section equipment-hide pc shop-inventory"> 
+				<label style="text-align: center;">Equipment</label>
+				<table style="width:97%">
+					<tr>
+						<td style="text-align: right;">
+							<textarea name="attr_geartext1"></textarea>
+							<textarea name="attr_geartext2"></textarea>
+						</td>
+						<td style="text-align: center;">
+							<textarea name="attr_geartext3"></textarea>
+							<textarea name="attr_geartext4"></textarea>
+						</td>
+						<td style="text-align: Left;">
+							<textarea name="attr_geartext5"></textarea>
+							<textarea name="attr_geartext6"></textarea>
+						</td>
+					</tr>
+				</table>
+		</div>
+
+
+	<!-- ---------------------------------------------------------- Background & extended info------------------------------------ -->
+
+		<div class="section background-hide pc npc">
+			<label style="text-align: center">Background and extended info</label>
+			<table>
+				<tr>
+					<td style="width:33.33%;"><label>Background</label>
+						<div>
+							<textarea name="attr_background"></textarea>
+						</div>
+					</td>
+					<td style="width:33.33%;">
+						<label>Personality</label>
+						<div>
+							<textarea name="attr_personality"></textarea>
+						</div>
+					</td>
+					<td style="width:33.33%;">
+						<label>Objectives</label>
+						<div>
+							<textarea name="attr_objectives"></textarea>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Quotes</label>
+						<div>
+							<textarea name="attr_quotes"></textarea>
+						</div>
+					</td>
+					<td>
+						<label>Connections to other characters</label>
+						<div>
+							<textarea name="attr_connections"></textarea>
+						</div>
+					</td>
+					<td>
+						<label>Additional Notes</label>
+						<div>
+							<textarea name="attr_notes"></textarea>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+<!----------------------------------------------------- ROLL TEMPLATES --------------------->
+
+<rolltemplate class="sheet-rolltemplate-blue">
+<table>
+    <caption>{{name}}</caption>
+    {{#allprops() }}
+       <tr><td>{{key}}</td><td>{{value}}</td>
+    {{/allprops() }}
+</table>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-green">
+<table>
+    <caption>{{name}}</caption>
+    {{#allprops() }}
+       <tr><td>{{key}}</td><td>{{value}}</td>
+    {{/allprops() }}
+</table>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-red">
+<table>
+    <caption>{{name}}</caption>
+    {{#allprops() }}
+       <tr><td>{{key}}</td><td>{{value}}</td>
+    {{/allprops() }}
+</table>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-black">
+<table>
+    <caption>{{name}}</caption>
+    {{#allprops() }}
+       <tr><td>{{key}}</td><td>{{value}}</td>
+    {{/allprops() }}
+</table>
+</rolltemplate>
+
+
+<!-- ----------------------------------------------------- Sheet workers -------------------------------------- -->
+
+<script type="text/worker">
+</script>
