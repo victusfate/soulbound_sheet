@@ -210,49 +210,21 @@
 			<label style="text-align: center">Weapon & Armor</label>
 			<table>
 				<tr>
-					<td style="width:80px"><label>Weapon</label></td>
+					<td style="width:80px">Weapon</td>
 					<td style="width:45px">Pool</td>
 					<td style="width:45px">Focus</td>
 					<td style="width:45px">Damage</td>
 					<td style="width:80px">Traits</td>
                 </tr>
-                <!-- todo make a dynamic table with roll20 sheet -->
-                <tr>
-                    <td><input type="text" name="attr_weapon_name"/></td>
-                    <td><input type="number" name="attr_weapon_pool"/></td>
-                    <td><input type="number" name="attr_weapon_focus"/></td>
-                    <td><input type="number" name="attr_weapon_damage"/></td>
-                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
-                </tr>
-                <tr>
-                    <td><input type="text" name="attr_weapon_name"/></td>
-                    <td><input type="number" name="attr_weapon_pool"/></td>
-                    <td><input type="number" name="attr_weapon_focus"/></td>
-                    <td><input type="number" name="attr_weapon_damage"/></td>
-                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
-                </tr>
-                <tr>
-                    <td><input type="text" name="attr_weapon_name"/></td>
-                    <td><input type="number" name="attr_weapon_pool"/></td>
-                    <td><input type="number" name="attr_weapon_focus"/></td>
-                    <td><input type="number" name="attr_weapon_damage"/></td>
-                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
-                </tr>
-                <tr>
-                    <td><input type="text" name="attr_weapon_name"/></td>
-                    <td><input type="number" name="attr_weapon_pool"/></td>
-                    <td><input type="number" name="attr_weapon_focus"/></td>
-                    <td><input type="number" name="attr_weapon_damage"/></td>
-                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
-                </tr>
-                <tr>
-                    <td><input type="text" name="attr_weapon_name"/></td>
-                    <td><input type="number" name="attr_weapon_pool"/></td>
-                    <td><input type="number" name="attr_weapon_focus"/></td>
-                    <td><input type="number" name="attr_weapon_damage"/></td>
-                    <td><input type="text" name="attr_weapon_traits"/></td>                                                                               
-                </tr>                                                                
-			</table>
+            </table>
+            <!-- todo make a dynamic table with roll20 sheet -->
+            <fieldset class="repeating_weapons">
+                <input type="text" name="attr_weapon_name">Weapon Name</input>
+                <input type="number" name="attr_weapon_pool" value="0"/>
+                <input type="number" name="attr_weapon_focus" class="pipnumber" min="0" max="3" value="0"/>
+                <input type="number" name="attr_weapon_damage" value="1"/>
+                <button class="d6-dice rollmod" type="roll" name='roll_weapon_roll' value="&{template:blue} {{name=@{weapon_name}}} {{Roll=[[(@{weapon_pool})d6]]}} {{Focus=[[@{weapon_focus}]]}}" ></button>
+            </fieldset>			
 		</div>
 		
 
