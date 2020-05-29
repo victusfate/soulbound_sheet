@@ -27,7 +27,7 @@ for (let i = 0; i <= skills_div_3;i++) {
         const skill = skills[j]
         const attribute = skills_default_attributes[j]
         // todo add @{skill_focus} to the rollable
-        skills_markup += `\t<td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=${skill}}} {{Roll=[[(@{${attribute}} + @{${skill}_training})d6]]}} {{Focus=@{${skill}_focus}}}" >${skill}</button></td>\n`
+        skills_markup += `\t<td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=${skill}}} {{Roll=[[(@{${attribute}} + @{${skill}_training})d6]]}} {{Focus=[[@{${skill}_focus}]]}}" >${skill}</button></td>\n`
         skills_markup += `\t<td><input type="number" name="attr_${skill}_training" class="pipnumber" min="0" max="3" value="0"/></td>\n`
         skills_markup += `\t<td><input type="number" name="attr_${skill}_focus" class="pipnumber" min="0" max="3" value="0"/></td>\n`
     }

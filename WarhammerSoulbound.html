@@ -108,95 +108,95 @@
                                 <th>Training</th>
                                 <th>Focus</th>                            
                             </tr>
-                            // paste generated skills here (from generate_skill_section.js)
+                            <!-- paste generated skills here (from generate_skill_section.js) -->
                             <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=arcana}} {{Roll=[[(@{mind} + @{arcana_training})d6]]}} {{Focus=@{arcana_focus}}}" >arcana</button></td>
+                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=arcana}} {{Roll=[[(@{mind} + @{arcana_training})d6]]}} {{Focus=[[@{arcana_focus}]]}}" >arcana</button></td>
                                 <td><input type="number" name="attr_arcana_training" class="pipnumber" min="0" max="3" value="0"/></td>
                                 <td><input type="number" name="attr_arcana_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=devotion}} {{Roll=[[(@{soul} + @{devotion_training})d6]]}} {{Focus=@{devotion_focus}}}" >devotion</button></td>
+                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=devotion}} {{Roll=[[(@{soul} + @{devotion_training})d6]]}} {{Focus=[[@{devotion_focus}]]}}" >devotion</button></td>
                                 <td><input type="number" name="attr_devotion_training" class="pipnumber" min="0" max="3" value="0"/></td>
                                 <td><input type="number" name="attr_devotion_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=medicine}} {{Roll=[[(@{mind} + @{medicine_training})d6]]}} {{Focus=@{medicine_focus}}}" >medicine</button></td>
+                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=medicine}} {{Roll=[[(@{mind} + @{medicine_training})d6]]}} {{Focus=[[@{medicine_focus}]]}}" >medicine</button></td>
                                 <td><input type="number" name="attr_medicine_training" class="pipnumber" min="0" max="3" value="0"/></td>
                                 <td><input type="number" name="attr_medicine_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=athletics}} {{Roll=[[(@{body} + @{athletics_training})d6]]}} {{Focus=@{athletics_focus}}}" >athletics</button></td>
-                                <td><input type="number" name="attr_athletics_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_athletics_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=dexterity}} {{Roll=[[(@{body} + @{dexterity_training})d6]]}} {{Focus=@{dexterity_focus}}}" >dexterity</button></td>
-                                <td><input type="number" name="attr_dexterity_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_dexterity_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=might}} {{Roll=[[(@{body} + @{might_training})d6]]}} {{Focus=@{might_focus}}}" >might</button></td>
-                                <td><input type="number" name="attr_might_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_might_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=awareness}} {{Roll=[[(@{mind} + @{awareness_training})d6]]}} {{Focus=@{awareness_focus}}}" >awareness</button></td>
-                                <td><input type="number" name="attr_awareness_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_awareness_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=entertain}} {{Roll=[[(@{soul} + @{entertain_training})d6]]}} {{Focus=@{entertain_focus}}}" >entertain</button></td>
-                                <td><input type="number" name="attr_entertain_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_entertain_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=nature}} {{Roll=[[(@{mind} + @{nature_training})d6]]}} {{Focus=@{nature_focus}}}" >nature</button></td>
-                                <td><input type="number" name="attr_nature_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_nature_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=ballistic_skill}} {{Roll=[[(@{body} + @{ballistic_skill_training})d6]]}} {{Focus=@{ballistic_skill_focus}}}" >ballistic_skill</button></td>
-                                <td><input type="number" name="attr_ballistic_skill_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_ballistic_skill_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=fortitude}} {{Roll=[[(@{body} + @{fortitude_training})d6]]}} {{Focus=@{fortitude_focus}}}" >fortitude</button></td>
-                                <td><input type="number" name="attr_fortitude_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_fortitude_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=reflexes}} {{Roll=[[(@{body} + @{reflexes_training})d6]]}} {{Focus=@{reflexes_focus}}}" >reflexes</button></td>
-                                <td><input type="number" name="attr_reflexes_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_reflexes_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=beast_handling}} {{Roll=[[(@{soul} + @{beast_handling_training})d6]]}} {{Focus=@{beast_handling_focus}}}" >beast_handling</button></td>
-                                <td><input type="number" name="attr_beast_handling_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_beast_handling_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=guile}} {{Roll=[[(@{mind} + @{guile_training})d6]]}} {{Focus=@{guile_focus}}}" >guile</button></td>
-                                <td><input type="number" name="attr_guile_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_guile_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=stealth}} {{Roll=[[(@{body} + @{stealth_training})d6]]}} {{Focus=@{stealth_focus}}}" >stealth</button></td>
-                                <td><input type="number" name="attr_stealth_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_stealth_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=channelling}} {{Roll=[[(@{mind} + @{channelling_training})d6]]}} {{Focus=@{channelling_focus}}}" >channelling</button></td>
-                                <td><input type="number" name="attr_channelling_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_channelling_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=intimidation}} {{Roll=[[(@{soul} + @{intimidation_training})d6]]}} {{Focus=@{intimidation_focus}}}" >intimidation</button></td>
-                                <td><input type="number" name="attr_intimidation_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_intimidation_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=surival}} {{Roll=[[(@{mind} + @{surival_training})d6]]}} {{Focus=@{surival_focus}}}" >surival</button></td>
-                                <td><input type="number" name="attr_surival_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_surival_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=crafting}} {{Roll=[[(@{mind} + @{crafting_training})d6]]}} {{Focus=@{crafting_focus}}}" >crafting</button></td>
-                                <td><input type="number" name="attr_crafting_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_crafting_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=intuition}} {{Roll=[[(@{mind} + @{intuition_training})d6]]}} {{Focus=@{intuition_focus}}}" >intuition</button></td>
-                                <td><input type="number" name="attr_intuition_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_intuition_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=theology}} {{Roll=[[(@{mind} + @{theology_training})d6]]}} {{Focus=@{theology_focus}}}" >theology</button></td>
-                                <td><input type="number" name="attr_theology_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_theology_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>
-                        <tr>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=determination}} {{Roll=[[(@{soul} + @{determination_training})d6]]}} {{Focus=@{determination_focus}}}" >determination</button></td>
-                                <td><input type="number" name="attr_determination_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_determination_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=lore}} {{Roll=[[(@{mind} + @{lore_training})d6]]}} {{Focus=@{lore_focus}}}" >lore</button></td>
-                                <td><input type="number" name="attr_lore_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_lore_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=weapon_skill}} {{Roll=[[(@{body} + @{weapon_skill_training})d6]]}} {{Focus=@{weapon_skill_focus}}}" >weapon_skill</button></td>
-                                <td><input type="number" name="attr_weapon_skill_training" class="pipnumber" min="0" max="3" value="0"/></td>
-                                <td><input type="number" name="attr_weapon_skill_focus" class="pipnumber" min="0" max="3" value="0"/></td>
-                        </tr>                            
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=athletics}} {{Roll=[[(@{body} + @{athletics_training})d6]]}} {{Focus=[[@{athletics_focus}]]}}" >athletics</button></td>
+                                    <td><input type="number" name="attr_athletics_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_athletics_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=dexterity}} {{Roll=[[(@{body} + @{dexterity_training})d6]]}} {{Focus=[[@{dexterity_focus}]]}}" >dexterity</button></td>
+                                    <td><input type="number" name="attr_dexterity_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_dexterity_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=might}} {{Roll=[[(@{body} + @{might_training})d6]]}} {{Focus=[[@{might_focus}]]}}" >might</button></td>
+                                    <td><input type="number" name="attr_might_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_might_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=awareness}} {{Roll=[[(@{mind} + @{awareness_training})d6]]}} {{Focus=[[@{awareness_focus}]]}}" >awareness</button></td>
+                                    <td><input type="number" name="attr_awareness_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_awareness_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=entertain}} {{Roll=[[(@{soul} + @{entertain_training})d6]]}} {{Focus=[[@{entertain_focus}]]}}" >entertain</button></td>
+                                    <td><input type="number" name="attr_entertain_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_entertain_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=nature}} {{Roll=[[(@{mind} + @{nature_training})d6]]}} {{Focus=[[@{nature_focus}]]}}" >nature</button></td>
+                                    <td><input type="number" name="attr_nature_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_nature_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=ballistic_skill}} {{Roll=[[(@{body} + @{ballistic_skill_training})d6]]}} {{Focus=[[@{ballistic_skill_focus}]]}}" >ballistic_skill</button></td>
+                                    <td><input type="number" name="attr_ballistic_skill_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_ballistic_skill_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=fortitude}} {{Roll=[[(@{body} + @{fortitude_training})d6]]}} {{Focus=[[@{fortitude_focus}]]}}" >fortitude</button></td>
+                                    <td><input type="number" name="attr_fortitude_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_fortitude_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=reflexes}} {{Roll=[[(@{body} + @{reflexes_training})d6]]}} {{Focus=[[@{reflexes_focus}]]}}" >reflexes</button></td>
+                                    <td><input type="number" name="attr_reflexes_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_reflexes_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=beast_handling}} {{Roll=[[(@{soul} + @{beast_handling_training})d6]]}} {{Focus=[[@{beast_handling_focus}]]}}" >beast_handling</button></td>
+                                    <td><input type="number" name="attr_beast_handling_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_beast_handling_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=guile}} {{Roll=[[(@{mind} + @{guile_training})d6]]}} {{Focus=[[@{guile_focus}]]}}" >guile</button></td>
+                                    <td><input type="number" name="attr_guile_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_guile_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=stealth}} {{Roll=[[(@{body} + @{stealth_training})d6]]}} {{Focus=[[@{stealth_focus}]]}}" >stealth</button></td>
+                                    <td><input type="number" name="attr_stealth_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_stealth_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=channelling}} {{Roll=[[(@{mind} + @{channelling_training})d6]]}} {{Focus=[[@{channelling_focus}]]}}" >channelling</button></td>
+                                    <td><input type="number" name="attr_channelling_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_channelling_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=intimidation}} {{Roll=[[(@{soul} + @{intimidation_training})d6]]}} {{Focus=[[@{intimidation_focus}]]}}" >intimidation</button></td>
+                                    <td><input type="number" name="attr_intimidation_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_intimidation_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=surival}} {{Roll=[[(@{mind} + @{surival_training})d6]]}} {{Focus=[[@{surival_focus}]]}}" >surival</button></td>
+                                    <td><input type="number" name="attr_surival_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_surival_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=crafting}} {{Roll=[[(@{mind} + @{crafting_training})d6]]}} {{Focus=[[@{crafting_focus}]]}}" >crafting</button></td>
+                                    <td><input type="number" name="attr_crafting_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_crafting_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=intuition}} {{Roll=[[(@{mind} + @{intuition_training})d6]]}} {{Focus=[[@{intuition_focus}]]}}" >intuition</button></td>
+                                    <td><input type="number" name="attr_intuition_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_intuition_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=theology}} {{Roll=[[(@{mind} + @{theology_training})d6]]}} {{Focus=[[@{theology_focus}]]}}" >theology</button></td>
+                                    <td><input type="number" name="attr_theology_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_theology_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>
+                            <tr>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=determination}} {{Roll=[[(@{soul} + @{determination_training})d6]]}} {{Focus=[[@{determination_focus}]]}}" >determination</button></td>
+                                    <td><input type="number" name="attr_determination_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_determination_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=lore}} {{Roll=[[(@{mind} + @{lore_training})d6]]}} {{Focus=[[@{lore_focus}]]}}" >lore</button></td>
+                                    <td><input type="number" name="attr_lore_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_lore_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><button class="d6-dice rollmod" type="roll" value="&{template:blue} {{name=weapon_skill}} {{Roll=[[(@{body} + @{weapon_skill_training})d6]]}} {{Focus=[[@{weapon_skill_focus}]]}}" >weapon_skill</button></td>
+                                    <td><input type="number" name="attr_weapon_skill_training" class="pipnumber" min="0" max="3" value="0"/></td>
+                                    <td><input type="number" name="attr_weapon_skill_focus" class="pipnumber" min="0" max="3" value="0"/></td>
+                            </tr>                        
                         </table>
                         <textarea name="attr_skills" style="width:95%;height:13em" ></textarea>
                     </div>                    
