@@ -207,7 +207,7 @@
                     <div class='col'>
                         <h3>Talents</h3>
                         <fieldset class="repeating_talents"> 
-                            <select name="attr_dtype" class="dtype" onchange="talentSelect(this)"> 
+                            <select name="attr_talent" class="talent" > 
                                 <option value = "A WARM MEAL">A WARM MEAL</option>
                                 <option value = "ACUTE SENSE">ACUTE SENSE</option>
                                 <option value = "AETHER-KHEMISTS GUILD MEMBER">AETHER-KHEMISTS GUILD MEMBER</option>
@@ -286,7 +286,7 @@
                                 <option value = "ZHARRGRIM">ZHARRGRIM</option>
                             </select>
                             <textarea name="attr_talent_text"></textarea>
-                            <button name="chat_talent" type="roll" value="@{talent_text}"></button>
+                            <button name="chat_talent" type="roll" value="@{talent} @{talent_text}"></button>
                         </fieldset>
                     </div>                    
                 </div>
