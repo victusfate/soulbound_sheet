@@ -308,10 +308,11 @@
             </table>
             <!-- todo make a dynamic table with roll20 sheet -->
             <fieldset class="repeating_weapons">
-                <input type="text" name="attr_weapon_name">Weapon Name</input>
+                <input type="text" name="attr_weapon_name"/>
                 <input type="number" name="attr_weapon_pool" value="0"/>
                 <input type="number" name="attr_weapon_focus" class="pipnumber" min="0" max="3" value="0"/>
                 <input type="number" name="attr_weapon_damage" value="1"/>
+                <input type="text" name="attr_weapon_traits" value=""/>
                 <button class="d6-dice rollmod" type="roll" name='roll_weapon_roll' value="&{template:blue} {{name=@{weapon_name}}} {{Roll=[[(@{weapon_pool})d6]]}} {{Focus=[[@{weapon_focus}]]}}" ></button>
             </fieldset>			
 		</div>
