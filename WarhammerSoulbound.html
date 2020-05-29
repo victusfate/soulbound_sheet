@@ -125,6 +125,95 @@
                     </div>                    
                 </div>
 
+                <!-- Talents -->
+                <div class="flex-col">
+                    <div class='col'>
+                        <h3>Talents</h3>
+                        <fieldset class="repeating_talents"> 
+                            <select name="attr_dtype" class="dtype" onchange="talentSelect(this)"> 
+                                <option value = "A WARM MEAL">A WARM MEAL</option>
+                                <option value = "ACUTE SENSE">ACUTE SENSE</option>
+                                <option value = "AETHER-KHEMISTS GUILD MEMBER">AETHER-KHEMISTS GUILD MEMBER</option>
+                                <option value = "ALLEY CAT">ALLEY CAT</option>
+                                <option value = "AMBIDEXTROUS">AMBIDEXTROUS</option>
+                                <option value = "ANCESTRAL MEMORIES">ANCESTRAL MEMORIES</option>
+                                <option value = "ANIMAL FRIEND">ANIMAL FRIEND</option>
+                                <option value = "ARCANE DISCIPLINE">ARCANE DISCIPLINE</option>
+                                <option value = "BACKSTAB">BACKSTAB</option>
+                                <option value = "BARAZAKDUM, THE DOOM-OATH">BARAZAKDUM, THE DOOM-OATH</option>
+                                <option value = "BATTLE RAGE">BATTLE RAGE</option>
+                                <option value = "BLESSED (CHOOSE)">BLESSED (CHOOSE)</option>
+                                <option value = "BLOOD FRENZY">BLOOD FRENZY</option>
+                                <option value = "BULWARK">BULWARK</option>
+                                <option value = "COMBAT READY">COMBAT READY</option>
+                                <option value = "COMBAT REPAIRS">COMBAT REPAIRS</option>
+                                <option value = "CONTORTIONIST">CONTORTIONIST</option>
+                                <option value = "CRIMINAL">CRIMINAL</option>
+                                <option value = "CRUSHING BLOW">CRUSHING BLOW</option>
+                                <option value = "DEMOLITIONS EXPERT">DEMOLITIONS EXPERT</option>
+                                <option value = "DIPLOMAT">DIPLOMAT</option>
+                                <option value = "EIDETIC MEMORY">EIDETIC MEMORY</option>
+                                <option value = "ENDRINEERS GUILD MEMBER">ENDRINEERS GUILD MEMBER</option>
+                                <option value = "ARLESS">ARLESS</option>
+                                <option value = "FORBIDDEN KNOWLEDGE">FORBIDDEN KNOWLEDGE</option>
+                                <option value = "GRACEFUL LANDING">GRACEFUL LANDING</option>
+                                <option value = "GUNSLINGER">GUNSLINGER</option>
+                                <option value = "GUTS">GUTS</option>
+                                <option value = "HAIL OF DOOM">HAIL OF DOOM</option>
+                                <option value = "HARD TO KILL">HARD TO KILL</option>
+                                <option value = "HEAVY HITTER">HEAVY HITTER</option>
+                                <option value = "HEROIC CHALLENGE">HEROIC CHALLENGE</option>
+                                <option value = "HIT AND RUN">HIT AND RUN</option>
+                                <option value = "HUNTER">HUNTER</option>
+                                <option value = "IMMENSE STRIKES">IMMENSE STRIKES</option>
+                                <option value = "INTIMIDATING MANNER">INTIMIDATING MANNER</option>
+                                <option value = "IRON STOMACH">IRON STOMACH</option>
+                                <option value = "IRON WILL">IRON WILL</option>
+                                <option value = "LEGENDARY SAGA">LEGENDARY SAGA</option>
+                                <option value = "LOYAL COMPANION (CHOOSE)">LOYAL COMPANION (CHOOSE)</option>
+                                <option value = "MARTIAL MEMORIES">MARTIAL MEMORIES</option>
+                                <option value = "MASTER OF DISGUISE">MASTER OF DISGUISE</option>
+                                <option value = "MEDIC">MEDIC</option>
+                                <option value = "MOUNTED COMBATANT">MOUNTED COMBATANT</option>
+                                <option value = "NIGHT VISION">NIGHT VISION</option>
+                                <option value = "OBSERVANT">OBSERVANT</option>
+                                <option value = "OPPORTUNIST">OPPORTUNIST</option>
+                                <option value = "ORIENTATION">ORIENTATION</option>
+                                <option value = "PATIENT STRIKE">PATIENT STRIKE</option>
+                                <option value = "PIERCE ARMOUR">PIERCE ARMOUR</option>
+                                <option value = "POINT BLANK RANGE">POINT BLANK RANGE</option>
+                                <option value = "POTENT SPELLS">POTENT SPELLS</option>
+                                <option value = "QUICK RELOAD">QUICK RELOAD</option>
+                                <option value = "RELENTLESS ASSAULT">RELENTLESS ASSAULT</option>
+                                <option value = "RENDING BLOW">RENDING BLOW</option>
+                                <option value = "SAVVY">SAVVY</option>
+                                <option value = "SCHOLAR">SCHOLAR</option>
+                                <option value = "SENSE UR-GOLD">SENSE UR-GOLD</option>
+                                <option value = "SEVER">SEVER</option>
+                                <option value = "SHIELD MASTERY">SHIELD MASTERY</option>
+                                <option value = "SIGMAR’S JUDGEMENT">SIGMAR’S JUDGEMENT</option>
+                                <option value = "SILVER TONGUE">SILVER TONGUE</option>
+                                <option value = "SLEIGHT OF HAND">SLEIGHT OF HAND</option>
+                                <option value = "SPELLCASTING (CHOOSE)">SPELLCASTING (CHOOSE)</option>
+                                <option value = "STAR-FATED ARROW">STAR-FATED ARROW</option>
+                                <option value = "STRONG SOUL">STRONG SOUL</option>
+                                <option value = "TACTICIAN">TACTICIAN</option>
+                                <option value = "THE BIGGER THEY ARE">THE BIGGER THEY ARE</option>
+                                <option value = "TRADER’S CACHE">TRADER’S CACHE</option>
+                                <option value = "UNBIND">UNBIND</option>
+                                <option value = "UNBREAKABLE SPELLS">UNBREAKABLE SPELLS</option>
+                                <option value = "UNDERDOG">UNDERDOG</option>
+                                <option value = "VANISH">VANISH</option>
+                                <option value = "WEAPON WEAVE">WEAPON WEAVE</option>
+                                <option value = "WITCH-SIGHT">WITCH-SIGHT</option>
+                                <option value = "ZHARRGRIM">ZHARRGRIM</option>
+                            </select>
+                            <textarea name="attr_talenttext"></textarea>
+                            <button name="chat_talent" type="roll" value="@{attr_talenttext}"></button>
+                        </fieldset>
+                    </div>                    
+                </div>
+
 
 
 	<!-- -------------------------------------------------- Weapons & Armor --------------------------- -->
@@ -293,3 +382,6 @@
 
 <script type="text/worker">
 </script>
+
+
+
